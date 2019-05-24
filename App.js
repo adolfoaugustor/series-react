@@ -4,23 +4,24 @@ import LoginScreen from './src/pages/LoginScreen';
 
 const AppNavigaitor = createStackNavigator({
   'Login':{
-    screen:LoginScreen,
+    screen: LoginScreen,
     navigationOptions:{
       title: 'Bem Vindo!'
-    }
+      //headerTitleStyle: {alignSelf: 'center', textAlign: 'center'},
+    },
   },
 }, {
   defaultNavigationOptions:{
     title:"Series",
-    headerTintColor: '#000',  
+    headerTintColor: 'white',  
     headerStyle:{
-        backgroundColor: '#6ca2f7',
+        backgroundColor: 'red',
         borderBottomWidth:1,
         borderBottomColor: '#C5C5C5'
     },
     headerTitleStyle:{
-      color: '#000',
-      fontSize: 30,
+      color: 'white',
+      fontSize: 30
     }
   }
 });
