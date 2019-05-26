@@ -1,27 +1,32 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import LoginScreen from './src/pages/LoginScreen';
+import SeriesPage from './src/pages/SeriesPage';
 
 const AppNavigaitor = createStackNavigator({
   'Login':{
     screen: LoginScreen,
     navigationOptions:{
       title: 'Bem Vindo!'
-      //headerTitleStyle: {alignSelf: 'center', textAlign: 'center'},
     },
+    'Main':{
+      screen: SeriesPage
+    }
   },
 }, {
   defaultNavigationOptions:{
     title:"Series",
     headerTintColor: 'white',  
     headerStyle:{
-        backgroundColor: 'red',
+        backgroundColor: 'black',
         borderBottomWidth:1,
-        borderBottomColor: '#C5C5C5'
+        borderBottomColor: '#C5C5C5',
+        textAlign: 'center'
     },
     headerTitleStyle:{
       color: 'white',
-      fontSize: 30
+      fontSize: 30,
+      textAlign: 'center'
     }
   }
 });
