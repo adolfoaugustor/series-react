@@ -7,26 +7,28 @@ const AppNavigaitor = createStackNavigator({
   'Login':{
     screen: LoginScreen,
     navigationOptions:{
-      title: 'Bem Vindo!'
-    },
-    'Main':{
-      screen: SeriesPage
+      headerTitleStyle: {
+        textAlign:"center", 
+        flex:1  
+      },
+      title: 'Bem Vindo!',
     }
   },
+  'Main':{
+    screen: SeriesPage
+  }
 }, {
   defaultNavigationOptions:{
     title:"Series",
     headerTintColor: 'white',  
     headerStyle:{
-        backgroundColor: 'black',
+        backgroundColor: 'blue',
         borderBottomWidth:1,
-        borderBottomColor: '#C5C5C5',
-        textAlign: 'center'
+        borderBottomColor: '#C5C5C5'
     },
     headerTitleStyle:{
       color: 'white',
-      fontSize: 30,
-      textAlign: 'center'
+      fontSize: 30
     }
   }
 });
